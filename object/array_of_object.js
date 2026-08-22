@@ -10,6 +10,6 @@ let student = [
 ];
 
 console.log(student);
-console.log(student.name);
+console.log(student[0].name);
 
 console.log(student);
