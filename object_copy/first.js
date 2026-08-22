@@ -2,15 +2,14 @@ let user = {
   name: "adesh",
   age: 21,
   address: {
-    dity: "pune",
+    city: "pune",
   },
 };
 
-// shallow copy
-
 let user2 = Object.assign({}, user);
 
-user.name="new name ";
-user.address="Mumbai";
-console.log(user)
+user.name = "new name";
+user.address.city = "mumbai";
+
+console.log(user);
 console.log(user2);
