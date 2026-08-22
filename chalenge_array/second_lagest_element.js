@@ -12,5 +12,7 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 
+console.log("output is :");
+
 console.log("Largest =", large);
 console.log("Second Largest =", second);
