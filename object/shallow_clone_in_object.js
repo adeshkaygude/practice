@@ -9,7 +9,7 @@ let user = {
 let user2 = Object.assign({}, user);
 
 user.name = "new_name";
-user.address.city = "ganeshwadi";
+user.address.city = "mumbai";
 
 console.log(user);
 console.log(user2);
