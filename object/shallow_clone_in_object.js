@@ -8,8 +8,10 @@ let user = {
 
 let user2 = Object.assign({}, user);
 
-user.name = "new_name";
+user.name = "omkar";
 user.address.city = "mumbai";
+
 
 console.log(user);
 console.log(user2);
+
