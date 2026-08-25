@@ -1,17 +1,15 @@
 let user = {
   name: "adesh",
   age: 21,
-  address: {
+
+  adress: {
     city: "pune",
   },
 };
 
 let user2 = Object.assign({}, user);
-
 user.name = "omkar";
-user.address.city = "mumbai";
-
+user.adress.city = "mumbai";
 
 console.log(user);
 console.log(user2);
-
