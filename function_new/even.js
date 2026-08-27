@@ -1,7 +1,7 @@
 function even(n) {
   if (n % 2 == 0) {
     return "even";
-  }else{
+  } else {
     return "odd";
   }
 }
