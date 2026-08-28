@@ -12,3 +12,5 @@ user.rollno = 1;
 delete user.age;
 
 console.log(user);
+
+console.log(Object.isExtensible(user));
