@@ -13,8 +13,6 @@ let arr = [
   },
 ];
 
-arr.forEach((arr)=>{
-    console.log(arr.name,arr.age);
-    
-    
-})
+arr.forEach((arr) => {
+  console.log(arr.name, arr.age);
+});
