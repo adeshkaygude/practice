@@ -1,5 +1,11 @@
-function greet(name) {
-  return `Hello, ${name}!`;
+let arr = [1, 2, 3, 4, 5, 6];
+
+for (a of arr) {
+  console.log(a);
 }
 
-console.log(greet("Alice")); // Output: "Hello, Alice!"
+for (b in arr) {
+  console.log(arr.at(b));
+}
+
+
