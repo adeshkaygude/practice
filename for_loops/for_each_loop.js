@@ -1,5 +1,8 @@
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let print = function (el) {
+let arr=[2,3,5,2,3];
+
+let print=function(el)
+{
   console.log(el);
-};
+  
+}
 arr.forEach(print);
