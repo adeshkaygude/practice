@@ -1,5 +1,6 @@
 let arr = [2, 3, 4, 5, 6];
 
-arr.forEach((el) => {
-  console.log(el);
+arr.forEach((el)=>{
+    console.log(el);
+    
 });
