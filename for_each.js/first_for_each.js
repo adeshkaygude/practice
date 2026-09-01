@@ -1,9 +1,7 @@
-let arr=[1,2,3,4,5,6,7,8,9,10];
+let arr = [10, 20, 30, 40, 50];
 
-let arr2= function (el)
-{
-    console.log(el);
-    
+let arr2 = function (el) {
+  console.log(el);
 };
 
-arr.forEach(arr2)
+arr.forEach(arr2);
