@@ -1,7 +1,7 @@
-let nums = [100, 2, 50, 10];
+let arr = [25, 10, 75, 40, 5, 90];
 
-nums.sort((a,b)=>{
-    return b-a;
-})
+arr.sort((a, b) => {
+  return b - a;
+});
 
-console.log(nums);
+console.log(arr);

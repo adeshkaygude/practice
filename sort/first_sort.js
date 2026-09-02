@@ -1,6 +1,6 @@
-let nums = [100, 2, 50, 10];
+let arr = [45, 12, 89, 3, 67, 21];
 
-nums.sort((a,b)=>{
-    return a-b;
-})
-console.log(nums);
+arr.sort((a, b) => {
+  return a - b;
+});
+console.log(arr);
