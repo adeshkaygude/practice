@@ -1,6 +1,7 @@
-let arr = [12, 45, 7, 89, 34, 67];
+let arr = [56, 23, 78, 12, 90, 34];
 arr.sort((a, b) => {
   return a - b;
 });
 
-console.log(arr[arr.length-1]);
+console.log(arr[arr.length - 1]);
+console.log(arr[0]);
