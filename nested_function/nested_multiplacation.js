@@ -8,4 +8,4 @@ function outer(a) {
   return first;
 }
 
-console.log(outer(10, 20, 30));
+console.log(outer(10)(20)(30));
