@@ -15,6 +15,7 @@ function createcounter() {
   };
 }
 let counter = createcounter();
+
 console.log(counter.increament());
 console.log(counter.increament());
 console.log(counter.increament());

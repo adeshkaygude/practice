@@ -1,20 +1,14 @@
-function createCounter() {
-  const count = 0;
-  function increament() {
-    count++;
-
-    function decrement() {
-      count--;
-      return count;
-    }
-    return decrement;
+function createAccount(balance) {
+  let mony = balance;
+  function inner(ammount) {
+    mony = mony + ammount;
+    return mony;
   }
-
-  return increament;
+  return inner;
 }
-let counter = createCounter();
-console.log(counter.increament());
-console.log(counter.increament());
-console.log(counter.increament());
-console.log(counter.decrement());
-console.log(counter.decrement());
+
+let account = createAccount(1000);
+
+console.log(account()); // 1000
+console.log(account(500)); // 1500
+console.log(account(200)); // 1700
