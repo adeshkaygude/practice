@@ -1,8 +1,9 @@
-function reverse(str) {
+function revers(str) {
   if (str === "") {
     return "";
   }
-  return reverse(str.slice(1)) + str[0];
+
+  return revers(str.slice(1)) + str;
 }
 
-console.log(reverse("hello"));
+console.log(revers("hello"));
