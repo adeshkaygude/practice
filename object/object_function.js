@@ -11,7 +11,6 @@ function displayemployee(emp) {
 }
 displayemployee(employee);
 
-
-let student={
-    name
-}
+let student = {
+  name,
+};
