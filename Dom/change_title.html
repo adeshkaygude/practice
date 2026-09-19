@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>original title</title>
+  </head>
+
+  <body>
+    <!-- inline -->
+    <button onclick="inlineEvent()">inline event</button>
+
+    <!-- event property -->
+    <button id="property_Btn">event property</button>
+
+    <!-- addEventListener -->
+    <button id="add_event">add event listener</button>
+
+    <script>
+      // inline event
+      function inlineEvent() {
+        document.title = "inline event";
+      }
+
+      // event property
+      let propertyBtn = document.getElementById("property_Btn");
+
+      propertyBtn.onclick = function () {
+        document.title = "event property";
+      };
+
+      // event listener
+      let event = document.getElementById("add_event");
+
+      event.addEventListener("click", function () {
+        document.title = "add event listener";
+      });
+    </script>
+  </body>
+</html>
