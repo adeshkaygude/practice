@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="heading">DOM Practice</h2>
+
+    <p class="text">HTML</p>
+    <p class="text">CSS</p>
+    <p class="text">JavaScript</p>
+
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+
+    <script>
+      let head = document.querySelector("#heading");
+      head.style.color = "green ";
+
+      let all = document.querySelectorAll(".text");
+      for (let i of all) {
+        i.style.background = "yellow";
+      }
+
+      let div = document.getElementsByTagName("div");
+      {
+        for (let j of div) {
+          j.style.background = "blue";
+          j.style.padding = "10px";
+        }
+      }
+    </script>
+  </body>
+</html>
