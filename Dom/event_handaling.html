@@ -1,0 +1,98 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Original Title</title>
+  </head>
+  <body>
+    <h1>Change Page Title</h1>
+
+    <button onclick="changeTitleInline()">Inline Event</button>
+
+    <button id="propertyBtn">DOM Property Event</button>
+
+    <button id="listenerBtn">addEventListener Event</button>
+
+    <script>
+      function changeTitleInline() {
+        document.title = "Title Changed - Inline";
+      }
+
+      let propertyBtn = document.getElementById("propertyBtn");
+
+      propertyBtn.onclick = function () {
+        document.title = "Title Changed - DOM Property";
+      };
+
+      let listenerBtn = document.getElementById("listenerBtn");
+
+      listenerBtn.addEventListener("click", function () {
+        document.title = "Title Changed - addEventListener";
+      });
+    </script>
+  </body>
+</html> -->
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selectors</title>
+  </head>
+
+  <body>
+    <h1 id="title">DOM Selectors</h1>
+
+    <p class="message">Hello</p>
+    <p class="message">Welcome</p>
+    <p class="message">Adesh</p>
+
+    <div>Div 1</div>
+    <div>Div 2</div>
+
+    <button id="btn">Change Background</button>
+
+    <script>
+      // 1. getElementById()
+      let title = document.getElementById("title");
+      title.style.background = "pink";
+
+      // 2. getElementsByClassName()
+      let messages = document.getElementsByClassName("message");
+
+      for (let i = 0; i < messages.length; i++) {
+        messages[i].style.backgroundColor = "lightblue";
+      }
+
+      // 3. getElementsByTagName()
+      let divs = document.getElementsByTagName("div");
+
+      for (let i = 0; i < divs.length; i++) {
+        divs[i].style.backgroundColor = "orange";
+      }
+
+      // 4. querySelector()
+      let firstMessage = document.querySelector(".message");
+      firstMessage.style.color = "red";
+
+      // 5. querySelectorAll()
+      let allMessages = document.querySelectorAll(".message");
+
+      for (let i = 0; i < allMessages.length; i++) {
+        allMessages[i].style.border = "2px solid black";
+      }
+
+      // Button
+      let btn = document.getElementById("btn");
+
+      btn.onclick = function () {
+        document.body.style.backgroundColor = "lavender";
+      };
+    </script>
+  </body>
+</html>

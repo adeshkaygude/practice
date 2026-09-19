@@ -3,57 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM Selectors</title>
+    <title>Document</title>
   </head>
 
   <body>
-    <h1 id="title">DOM Selectors</h1>
+    <h1 id="title">dom selector</h1>
 
-    <p class="message">Hello</p>
-    <p class="message">Welcome</p>
-    <p class="message">Adesh</p>
+    <p class="message">hello</p>
+    <p class="message">welcome</p>
+    <p class="message">adesh</p>
 
-    <div>Div 1</div>
-    <div>Div 2</div>
-
-    <button id="btn">Change Background</button>
+    <div>div1</div>
+    <div>div2</div>
 
     <script>
-      // 1. getElementById()
+      // by id
       let title = document.getElementById("title");
-      title.style.background = "pink";
+      title.style.backgroundColor = "red";
+      title.style.padding = "2px";
 
-      // 2. getElementsByClassName()
-      let messages = document.getElementsByClassName("message");
+      // by using class name
+      let message = document.getElementsByClassName("message");
 
-      for (let i = 0; i < messages.length; i++) {
-        messages[i].style.backgroundColor = "lightblue";
+      for (let i of message) {
+        i.style.backgroundColor = "yellow";
       }
 
-      // 3. getElementsByTagName()
+      // get element by tag name
       let divs = document.getElementsByTagName("div");
 
-      for (let i = 0; i < divs.length; i++) {
-        divs[i].style.backgroundColor = "orange";
+      for (let j of divs) {
+        j.style.backgroundColor = "blue";
+        j.style.padding = "5px";
+        j.style.color = "red";
       }
 
-      // 4. querySelector()
-      let firstMessage = document.querySelector(".message");
-      firstMessage.style.color = "red";
+      // query selector
+      let query = document.querySelector("#title");
+      query.style.color = "blue";
 
-      // 5. querySelectorAll()
-      let allMessages = document.querySelectorAll(".message");
+      // query selector all
+      let all = document.querySelectorAll(".message");
 
-      for (let i = 0; i < allMessages.length; i++) {
-        allMessages[i].style.border = "2px solid black";
+      for (let i of all) {
+        i.style.color = "red";
       }
-
-      // Button
-      let btn = document.getElementById("btn");
-
-      btn.onclick = function () {
-        document.body.style.backgroundColor = "lavender";
-      };
     </script>
   </body>
 </html>
