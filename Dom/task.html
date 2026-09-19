@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">JavaScript</h1>
+    <p class="message">Hello</p>
+    <p class="message">Welcome</p>
+    <p class="message">Adesh</p>
+
+    <script>
+      // select using id
+      let id = document.getElementById("title");
+      id.style.background = "red";
+
+      //   query selector
+      let select = document.querySelectorAll(".message");
+      for (let i of select) {
+        i.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>
