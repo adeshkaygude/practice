@@ -5,48 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
   <body>
-    <h1 id="title">dom selector</h1>
+    <h2 id="hi">hi hellow</h2>
 
-    <p class="message">hello</p>
-    <p class="message">welcome</p>
-    <p class="message">adesh</p>
+    <p class="first">hi</p>
+    <p class="first">hello</p>
+    <p class="first">back</p>
 
-    <div>div1</div>
-    <div>div2</div>
-
+    <div>1 div</div>
+    <div>2 div</div>
     <script>
-      // by id
-      let title = document.getElementById("title");
-      title.style.backgroundColor = "red";
-      title.style.padding = "2px";
+      // id selector
+      let id = document.getElementById("hi");
+      id.style.background = "red";
 
-      // by using class name
-      let message = document.getElementsByClassName("message");
+      // class selector
 
-      for (let i of message) {
-        i.style.backgroundColor = "yellow";
+      let clas = document.getElementsByClassName("first");
+      for (i of clas) {
+        i.style.background = "pink";
       }
 
-      // get element by tag name
-      let divs = document.getElementsByTagName("div");
+      // tag name selector
 
-      for (let j of divs) {
-        j.style.backgroundColor = "blue";
-        j.style.padding = "5px";
-        j.style.color = "red";
+      let tag = document.getElementsByTagName("div");
+      for (i of tag) {
+        i.style.background = "yellow";
       }
 
       // query selector
-      let query = document.querySelector("#title");
-      query.style.color = "blue";
+      let query = document.querySelector(".first");
+      query.style.color = "white";
 
       // query selector all
-      let all = document.querySelectorAll(".message");
 
-      for (let i of all) {
-        i.style.color = "red";
+      let select = document.querySelectorAll(".first");
+      for (j of select) {
+        j.style.padding = "50px";
       }
     </script>
   </body>
