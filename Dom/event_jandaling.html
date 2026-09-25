@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM Event Handling</title>
+  </head>
+  <body>
+    <h1 id="title">Original Title</h1>
+
+    <!-- 1. Inline Event Handling -->
+    <button onclick="inlineEvent()">Inline Event</button>
+
+    <!-- 2. Event Property -->
+    <button id="propertyBtn">Event Property</button>
+
+    <!-- 3. addEventListener -->
+    <button id="listenerBtn">addEventListener</button>
+
+    <script>
+      // 1. Inline Event Handling
+      function inlineEvent() {
+        document.getElementById("title").innerText = "Inline Event Clicked";
+      }
+
+      // 2. Event Property
+      var propertyBtn = document.getElementById("propertyBtn");
+
+      propertyBtn.onclick = function () {
+        document.getElementById("title").innerText = "Event Property Clicked";
+      };
+
+      // 3. addEventListener
+      var listenerBtn = document.getElementById("listenerBtn");
+
+      listenerBtn.addEventListener("click", function () {
+        document.getElementById("title").innerText = "addEventListener Clicked";
+      });
+    </script>
+  </body>
+</html>
