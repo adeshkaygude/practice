@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      #cl {
+        color: blue;
+      }
+    </style>
   </head>
+
   <body>
     <h1 id="title">Hello</h1>
 
     <script>
       let title = document.getElementById("title");
-      title.innerHTML = "<h2>DOM Practice</h2>";
+
+      title.textContent = "Welcome to DOM";
+
+      title.setAttribute("id", "cl");
     </script>
   </body>
 </html>
