@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .submit-btn {
+        background-color: red;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" title="Click Button">Click Me</button>
+    <script>
+      let btn = document.querySelector("button");
+      btn.textContent = "submit";
+      btn.setAttribute("title", "Submit Form");
+      btn.setAttribute("class", "submit-btn");
+    </script>
+  </body>
+</html>
