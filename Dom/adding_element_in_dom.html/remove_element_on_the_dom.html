@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <div id="box">
+      <p id="message">Hello JavaScript</p>
+      <button id="deleteBtn">Delete</button>
+    </div>
+
+    <script>
+      let button = document.getElementById("deleteBtn");
+
+      let p = document.getElementById("message");
+
+      button.addEventListener("click", function () {
+        p.remove();
+      });
+    </script>
+  </body>
+</html>
