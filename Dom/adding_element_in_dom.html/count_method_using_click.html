@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <body>
+    <h1 id="count">Count: 0</h1>
+
+    <button id="decrease">Decrease</button>
+    <button id="reset">Reset</button>
+    <button id="increase">Increase</button>
+
+    <script>
+      let increase = document.getElementById("increase");
+      let decrease = document.getElementById("decrease");
+      let reset = document.getElementById("reset");
+      let h1 = document.getElementById("count");
+      let value = 0;
+      increase.addEventListener("click", function () {
+        value++;
+        h1.textContent = value;
+      });
+
+      decrease.addEventListener("click", function () {
+        value--;
+        h1.textContent = value;
+      });
+
+      reset.addEventListener("click", function () {
+        value = 0;
+        h1.textContent = value;
+      });
+    </script>
+  </body>
+</html>
