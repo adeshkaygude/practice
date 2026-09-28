@@ -7,15 +7,18 @@
   </head>
   <body>
     <div id="parent">
-      <p id="child">Hello</p>
+      <p>First</p>
+      <p>Second</p>
+      <p>Third</p>
     </div>
-    <button id="btn">find parent</button>
+
+    <button>get all child</button>
     <script>
-      let p = document.getElementById("child");
-      let button = document.getElementById("btn");
+      let button = document.querySelector("button");
+      let parent = document.getElementById("parent");
 
       button.addEventListener("click", function () {
-        console.log(p.parentElement);
+        console.log(parent.children);
       });
     </script>
   </body>
