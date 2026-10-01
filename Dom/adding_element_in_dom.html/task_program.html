@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <body>
+    <input id="taskInput" type="text" placeholder="Enter task" />
+    <button id="addBtn">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+      let input = document.getElementById("taskInput");
+      let button = document.getElementById("addBtn");
+      let ul = document.getElementById("taskList");
+
+      button.addEventListener("click", function () {
+        let in_value = input.value;
+        li = document.createElement("li");
+        li.textContent = in_value;
+        ul.append(li);
+        d_button = document.createElement("button");
+        
+
+      });
+    </script>
+  </body>
+</html>
