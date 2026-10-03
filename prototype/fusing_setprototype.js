@@ -1,6 +1,6 @@
 const user = {
-  dep: "it",
-  company: "abc",
+  dept: "it",
+  company: "abcd",
   profile() {
     console.log("name :", this.name);
   },
@@ -30,7 +30,4 @@ console.log(emp2);
 console.log(emp3);
 
 emp1.profile();
-console.log(emp1.dep);
-
-emp2.profile();
-console.log(emp2.dep);
+  
