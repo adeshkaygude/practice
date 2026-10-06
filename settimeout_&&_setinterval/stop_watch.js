@@ -8,4 +8,4 @@ const interval = setInterval(() => {
     clearInterval(interval);
     console.log("Time over");
   }
-});
+}, 1000);
