@@ -1,4 +1,5 @@
-function interval() {
+function time() {
   console.log("hello");
 }
-setInterval(interval, 4000);
+
+setInterval(time, 1000);
