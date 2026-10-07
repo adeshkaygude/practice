@@ -1,14 +1,14 @@
-function getdata() {
+function voting(age) {
   return new Promise((resolve, reject) => {
-    if (true) {
-      resolve("get data");
+    if (age > 18) {
+      resolve("your are eligible");
     } else {
-      reject("data not received");
+      reject("you are not eligible ");
     }
   });
 }
 
-getdata()
+voting(20)
   .then((data) => {
     console.log(data);
   })
