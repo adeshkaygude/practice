@@ -9,8 +9,8 @@ function login(user, pass) {
 }
 
 login("admin", 1234)
-  .then((sucess) => {
-    console.log(sucess);
+  .then((success) => {
+    console.log(success);
   })
   .catch((err) => {
     console.log(err);
