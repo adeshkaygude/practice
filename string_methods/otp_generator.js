@@ -1,15 +1,23 @@
 function fech_data() {
-  return new Promise((resolve, reject) => {
-    let data = fetch("https://jsonplaceholder.typicode.com/users");
+  return fetch("https://jsonplaceholder.typicode.com/users").then(
+    (response) => {
+      if (!response.ok) {
+        throw new Error("Data not fetched");
+      }
 
-    if (true) {
-      resolve("fetch data ");
-    } else {
-      reject("data not fetch");
-    }
-  });
+      return response.json();
+    },
+  );
 }
 
-function check_fetch(){
-    
+function check_fetch() {
+  fech_data()
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error.message);
+    });
 }
+
+check_fetch();
