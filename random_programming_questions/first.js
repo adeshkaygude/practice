@@ -1,6 +1,6 @@
-const numbers = [12, 35, 1, 10, 34, 35];
+const numbers = [12, 35, 1, 10];
 
-function secondLargest(numbers) {
+function Largest(numbers) {
   let largest = 0;
   let secondlargest = 0;
 
@@ -16,4 +16,4 @@ function secondLargest(numbers) {
   return secondlargest;
 }
 
-console.log(secondLargest(numbers));
+console.log(Largest(numbers));
